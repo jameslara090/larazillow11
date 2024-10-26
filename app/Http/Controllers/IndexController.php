@@ -9,10 +9,15 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return Inertia('Index/Index');
+        return inertia(
+        'Index/Index',
+        [
+            'message' => 'Hello from Laravel'
+        ]
+    );
     }
     public function show()
     {
-        return Inertia('Index/Show');
+        return inertia('Index/Show');
     }
 }
