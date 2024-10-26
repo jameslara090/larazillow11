@@ -1,9 +1,9 @@
 <template>
-    <h1>Hello World! {{ counter++ }}</h1>
+    <div>Index</div>
+    <a href="/hello">Show Page</a>
 </template>
 
 <script setup>
-import {ref} from 'vue'
-const counter = ref(0)
-setInterval(() => counter.value++, 1000)
+ import {Link} from '@inertiajs/vue3';
 </script>
+
